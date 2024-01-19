@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav id="desktop-nav" style="background-color: #1F456E;">
+        <div class="logo" style="color: white">Web Programming My Portfolio</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Hobbies</a></li>
+                <li><a href="#projects">Interests</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Wency Jezrel Opiso</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="download.jpg" alt="Pogi Profile Picture" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">I am</p>
+            <h1 class="title">Wency Jezrel Opiso</h1>
+            <p class="section__text__p2">From BSIT - 222</p>
+            <div class="btn-container"></div>
+            <div id="socials-container">
+                <img src="linkedin.png" alt="My LinkedIn profile" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/wency-jezrel-opiso-1b68942aa/'" />
+                <img src="github.png" alt="My Github profile" class="icon"
+                    onclick="location.href='https://github.com/Xyathhh'" />
+            </div>
+
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="about">
+        <p class="section__text__p1">Learn More About </p>
+        <h1 class="title">Myself</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="about-pic.jpg" alt="Profile picture" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <h3>Student</h3>
+                        <p>Currently taking studies at National University-Fairview</p>
+                    </div>
+                    <div class="details-container">
+                        <h3>Youth</h3>
+                        <p>I am a Parishioner and a Youth at Our Lady of Guadalupe Parish Marilao, Bulacan</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        <ul>
+                            <h3>Hobbies</h3>
+                            <li>Video Editing</li>
+                            <li>Basketball</li>
+                            <li>Cycling</li>
+                            <li>Photography</li>
+                            <li>Acting</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="experience">
+        <p class="section__text__p1">Here's my</p>
+        <h1 class="title">Hobbies</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="my experience.jpg" alt="Profile picture" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <h3>"Cycling"</h3><br>
+                        <p>In this picture that is me riding a bicycle. I put this picture as my experience
+                            because I am a bicycle mechanic. I don't have any pictures of me fixing a bicycle, but
+                            I can assure everyone that I can ride and fix a bicycle.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="myexperience.jpg" alt="Profile picture" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <h3>"Acting"</h3><br>
+                        <p>The context of this picture is a theatre-like play during holy week in a Catholic Church
+                            called "Senakulo". That is me portraying "Judas". This is a experience I never prayed for
+                            but my fate gave me this opportunity and in turned out a skill for me.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="projects">
+        <p class="section__text__p1">My Personal</p>
+        <h1 class="title">Interests</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+
+                    </div>
+                    <h2 class="experience-sub-title project-title">Smartphones</h2>
+		    <p>Smartphones, this is one of the topics that people do not talk so much about. For me Smartphones is interesting specially nowadays. Smartphones are so powerful than you think. Some people cannot live without it because of its ability to make our lives easier that ever.</p>
+                    <div class="btn-container">
+
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+
+                    </div>
+                    <h2 class="experience-sub-title project-title">Fashion</h2>
+		    <p>Fashion is the most common thing in the world. Everyone is not conscious on how they look on other people's eyes. The actual meaning of Fashion for me, it is the impression of others based on what you wear. In short, what you wear is you.</p>
+                    <div class="btn-container">
+
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+
+                    </div>
+                    <h2 class="experience-sub-title project-title">Photography</h2>
+		    <p>Photography makes everything interesting. In this era, everyone can take a photo with their phone, camera, etc. Yet some of us still struggle even we have it everyday. Photography does not require a good camera or a good scenario/scenery to have a good picture. It is a skill that makes everything look good.  </p>
+                    <div class="btn-container">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<hr>
+
+
+<section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+            <img src="outlook.png" alt="Outlook icon" class="icon contact-icon email-icon" />
+            <p><a href="mailto:opisowc@students.nu-fairview.edu.ph">Email me in Outlook!</a></p>
+        </div>
+        <div class="contact-info-container">
+            <img src="facebook.png" alt="Facebook icon" class="icon contact-icon email-icon" />
+            <p><a href="https://www.facebook.com/Xyathhh/">Wency Jezrel!</a></p>
+
+</div>
+</section>
+
+
+    <hr>
+
+    <footer>
+        <nav style="background-color: #1F456E;">
+            <div class="nav-links-container" >
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Hobbies</a></li>
+                    <li><a href="#projects">Interests</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
