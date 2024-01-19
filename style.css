@@ -25,7 +25,6 @@ nav,
   display: flex;
 }
 
-/* Add the import statement for SF Pro */
 @import url("https://fonts.googleapis.com/css2?family=SF+Pro:wght@300;400;500;600&display=swap");
 
 /* DESKTOP NAV */
@@ -44,8 +43,6 @@ a:hover {
   color: lightgrey;
   text-decoration-color: violet;
 }
-
-/* ... (the rest of your existing CSS code) */
 
 
 body {
@@ -486,3 +483,61 @@ footer p {
       align-items: center;
       height: 100vh; /* Adjust as needed */
     }
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    text-align: center;
+    display: none;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .logo {
+    margin-bottom: 1rem;
+  }
+
+  section {
+    margin: 0 1rem;
+  }
+
+  .section-container {
+    flex-direction: column;
+  }
+
+  .section__pic-container {
+    width: 100%;
+  }
+
+  .experience-details-container {
+    text-align: center;
+  }
+
+  .article-container {
+    flex-direction: column;
+  }
+
+  article {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
