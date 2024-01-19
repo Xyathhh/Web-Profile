@@ -522,13 +522,15 @@ footer p {
 
   .section-container {
     flex-direction: column;
+    gap: 2rem; /* Add some gap between sections on mobile */
   }
 
   .section__pic-container {
     width: 100%;
   }
 
-  .experience-details-container {
+  .experience-details-container,
+  .details-container {
     text-align: center;
   }
 
@@ -539,5 +541,26 @@ footer p {
   article {
     width: 100%;
     margin-bottom: 1rem;
+  }
+
+  .project-img {
+    width: 100%; /* Adjust project image width on mobile */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  #contact {
+    height: auto; /* Adjust contact section height on mobile */
+  }
+
+  .contact-info-upper-container {
+    margin: 1rem 0;
+  }
+
+  footer {
+    margin: 0;
+  }
+
+  .center {
+    height: auto;
   }
 }
