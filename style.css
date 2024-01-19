@@ -483,56 +483,37 @@ footer p {
       align-items: center;
       height: 100vh; /* Adjust as needed */
     }
-/* Add this at the end of your existing CSS */
 
+/* Responsive Design */
 @media only screen and (max-width: 768px) {
-  body {
-    margin: 0;
-    padding: 0;
-  }
-
   nav {
-    display: none;
-  }
-
-  #desktop-nav {
-    display: none;
-  }
-
-  #hamburger-nav {
-    display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    background-color: #1F456E;
-    padding: 1rem;
+    height: auto;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    text-align: center;
+    display: none;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
   }
 
   .hamburger-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+    display: block;
   }
 
-  .menu-links {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: white;
-    width: 100%;
-    max-height: 0;
-    overflow: hidden;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .menu-links.open {
-    max-height: 300px;
-  }
-
-  .hamburger-icon span {
-    width: 30px;
-    height: 3px;
-    background-color: white;
+  .logo {
+    margin-bottom: 1rem;
   }
 
   section {
@@ -541,39 +522,57 @@ footer p {
 
   .section-container {
     flex-direction: column;
+    gap: 2rem; /* Add some gap between sections on mobile */
   }
 
-  .section__pic-container,
-  .about-details-container,
-  .experience-details-container,
-  .color-container {
+  .section__pic-container {
     width: 100%;
   }
 
   .experience-details-container,
-  .color-container {
-    align-items: center;
+  .details-container {
+    text-align: center;
   }
 
-  .details-container,
   .article-container {
+    flex-direction: column;
+  }
+
+  article {
     width: 100%;
-    border-radius: 0;
-    border: none;
     margin-bottom: 1rem;
-    background-color: white;
+  }
+
+  .project-img {
+    width: 100%; /* Adjust project image width on mobile */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  #contact {
+    height: auto; /* Adjust contact section height on mobile */
   }
 
   .contact-info-upper-container {
-    flex-direction: column;
-    height: auto;
-  }
-
-  .contact-info-container {
     margin: 1rem 0;
   }
 
-  .footer {
+  footer {
     margin: 0;
   }
+
+  .center {
+    height: auto;
+  }
 }
+
+/* Add this style at the end of your existing CSS */
+.btn-color-download {
+  background-color: #1F456E;
+  color: white;
+}
+
+.btn-color-download:hover {
+  background-color: #0F304E;
+  color: white;
+}
+
